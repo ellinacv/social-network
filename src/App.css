@@ -1,0 +1,31 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: 
+  "header header"
+  "nav content";
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.wrapper-content {
+  grid-area: content;
+  background-color: #edebe1;
+}
